@@ -92,8 +92,8 @@ E --> F[输出: 0/1/2分类]
 
 1. **预训练模型**：
    - 使用<kbd>`hfl/chinese-roberta-wwm-ext-large`</kbd>中文预训练模型
-   - 模型参数：$1024$ 隐藏层大小，$24$ 层 $Transformer$，$330M$ 参数
-   - 输入处理：最大长度 $256$，动态填充与截断
+   - 模型参数：1024 隐藏层大小，24 层 Transformer，330M 参数
+   - 输入处理：最大长度 256，动态填充与截断
 
 2. **微调架构**：
 
@@ -108,8 +108,8 @@ model = BertForSequenceClassification.from_pretrained(
 
 3. **优化策略**：
 
-- 优化器：$AdamW$ (*lr=2e-5*, *eps=1e-8*)
-- 学习率调度：带 $warmup$ 的 **线性衰减**
+- 优化器：AdamW (*lr=2e-5*, *eps=1e-8*)
+- 学习率调度：带 warmup 的 **线性衰减**
 
 ```python
 scheduler = get_linear_schedule_with_warmup(
@@ -123,8 +123,8 @@ scheduler = get_linear_schedule_with_warmup(
 
 4. **早停机制**：
 
-- 耐心值(*patience*)：$5$ 个epoch
-- 最小提升(*min_delta*)：$0.001$
+- 耐心值(*patience*)：5 个epoch
+- 最小提升(*min_delta*)：0.001
 - 保存验证集最佳模型
 
 
