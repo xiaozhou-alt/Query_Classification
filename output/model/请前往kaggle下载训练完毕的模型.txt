@@ -1,0 +1,2 @@
+chinese-roberta-wwm-ext-large-on-Medical_Query：
+https://www.kaggle.com/models/rexinshiminxiaozhou/chinese-roberta-wwm-ext-large-on-medical_query
