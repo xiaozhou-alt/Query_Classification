@@ -185,3 +185,5 @@ if __name__ == '__main__':
 战绩可查  ∠( ᐛ 」∠)_：
 
 ![1](./output/pic/record.png)
+
+更多信息请关注我的博客CSDN：[基于 RoBERTa 的医学 Query 语义匹配系统](https://blog.csdn.net/soejjdiwjssundo/article/details/149690273)
